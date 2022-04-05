@@ -1,0 +1,38 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #2A272A;
+}
+
+.title-font{
+    padding: 20px;
+    color: beige;
+    font-family: 'Fredoka', sans-serif;
+}
+
+div,iframe{
+    margin: 0 auto;
+}
+
+iframe{
+    display: block;
+    height: 500px;
+    width: 1000px;
+    padding-left: 200px;
+}
+
+.card{
+    width: 800px;
+    color: beige;
+    background-color: #2A272A;
+    
+
+}
+
+.card>.card-header{
+    width: 800px;
+}
+
+
