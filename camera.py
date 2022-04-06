@@ -40,4 +40,5 @@ class VideoCamera(object):
         for (x, y, w, h) in faces:
             image = image[y:y+h,x:x+w]
         image = cv2.resize(image, dsize=(320,240), interpolation=cv2.INTER_CUBIC)
-        return jpeg,image
+        norm_image = cv2.normalize(image, None, alpha=0, beta=1, norm_type=cv2.NORM_MINMAX, dtype=cv2.CV_32F)
+        return jpeg,norm_image
